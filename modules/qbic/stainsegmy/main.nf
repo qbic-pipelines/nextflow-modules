@@ -2,7 +2,7 @@ process STAINSEGMY {
     tag "$meta.id"
     label 'process_gpu'
 
-    container "ghcr.io/tckumarasekara/stainsegmy-test:52d456d150fb9d4aee2c1ced75c1043a71e833b3"
+    container "ghcr.io/qbic-pipelines/stainsegmy:b2cdae02ed0ff7116ab8500a83ae14ae55c259aa"
 
     input:
     tuple val(meta), path(hne_img)

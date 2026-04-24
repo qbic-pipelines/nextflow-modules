@@ -1,8 +1,9 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/nf-core/modules/master/subworkflows/yaml-schema.json
-name: "tif_registration_stainwarpy"
+name: "he2multi-regseg"
 
-description: Register H&E stained and multiplexed tissue images and transform segmentation masks using stainwarpy
+description: Segment H&E images with stainsegmy and register it with multiplexed tissue images and transform segmentation masks using stainwarpy
 keywords:
+  - image segmentation
   - image registration
   - histology
   - hne
@@ -13,6 +14,7 @@ components:
   - stainwarpy/extractchannel
   - stainwarpy/register
   - stainwarpy/transformsegmask
+  - subworkflows/tif_registration_stainwarpy
 
 input:
   - ch_hne:
@@ -27,20 +29,6 @@ input:
         Channel containing multiplexed tissue image in TIF/OME-TIF format
         Structure: [ val(meta), path(ome.tif) ]
       pattern: "*.{tif,ome.tif,tiff,ome.tiff}"
-  - ch_segmask:
-      type: file
-      description: |
-        Channel containing segmentation mask in TIF/OME-TIF/npy format. (optional input)
-        Structure: [ val(meta), path(ome.tif) ]
-      pattern: "*.{tif,ome.tif,tiff,ome.tiff,npy}"
-  - val_fixed_img:
-      type: string
-      description: |
-        Fixed image to use for registration ("multiplexed" or "hne")
-  - val_final_img_sz:
-      type: string
-      description: |
-        Final image size to output registered image and segmentation mask ("multiplexed" or "hne")
 
 output:
   - transformed_image:

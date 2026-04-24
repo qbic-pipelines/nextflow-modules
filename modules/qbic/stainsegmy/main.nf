@@ -1,6 +1,5 @@
 process STAINSEGMY {
     tag "$meta.id"
-    label 'process_medium'
     label 'process_gpu'
 
     container "ghcr.io/tckumarasekara/stainsegmy-test:52d456d150fb9d4aee2c1ced75c1043a71e833b3"

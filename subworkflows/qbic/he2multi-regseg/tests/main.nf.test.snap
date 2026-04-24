@@ -1,0 +1,73 @@
+{
+    "colon_tissue_local - ome.tif": {
+        "content": [
+            "sample1_transformed_image.ome.tif",
+            "sample1_transformed_segmentation_mask.ome.tif",
+            "sample1_registration_metrics_tform_map.json"
+        ],
+        "timestamp": "2026-04-24T09:54:32.244198401",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "25.10.4"
+        }
+    },
+    "colon_tissue_local - ome.tif - stub": {
+        "content": [
+            {
+                "0": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_transformed_image.ome.tif:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ],
+                "1": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_registration_metrics_tform_map.json:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ],
+                "2": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_transformed_segmentation_mask.ome.tif:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ],
+                "metrics": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_registration_metrics_tform_map.json:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ],
+                "transformed_image": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_transformed_image.ome.tif:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ],
+                "transformed_segmask": [
+                    [
+                        {
+                            "id": "sample1"
+                        },
+                        "sample1_transformed_segmentation_mask.ome.tif:md5,d41d8cd98f00b204e9800998ecf8427e"
+                    ]
+                ]
+            }
+        ],
+        "timestamp": "2026-04-24T09:54:43.63901399",
+        "meta": {
+            "nf-test": "0.9.5",
+            "nextflow": "25.10.4"
+        }
+    }
+}

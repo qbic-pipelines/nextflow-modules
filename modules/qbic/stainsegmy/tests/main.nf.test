@@ -8,13 +8,13 @@ nextflow_process {
     tag "modules_nfcore"
     tag "stainsegmy"
 
-    config "./nextflow.config"
+    config "./nextflow.config" 
 
     test("colon_tissue - ome.tif") {
 
         when {
             params {
-                modules_args = "--no-cuda --architecture U-Net"
+                modules_args = "--cuda --architecture U-Net"
             }
             process {
                 """

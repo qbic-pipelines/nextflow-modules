@@ -6,9 +6,9 @@ keywords:
 tools:
   - "stainsegmy":
       description: "Segmentation of H&E stained images using stainsegmy"
-      homepage: "https://github.com/tckumarasekara/stainsegmy"
-      documentation: "https://github.com/tckumarasekara/stainsegmy"
-      tool_dev_url: "https://github.com/tckumarasekara/stainsegmy"
+      homepage: "https://github.com/qbic-pipelines/stainsegmy"
+      documentation: "https://github.com/qbic-pipelines/stainsegmy"
+      tool_dev_url: "https://github.com/qbic-pipelines/stainsegmy"
       licence: "MIT License"
       identifier: ""
 

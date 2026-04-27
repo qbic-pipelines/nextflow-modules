@@ -5,7 +5,6 @@ nextflow_process {
     process "STAINSEGMY"
 
     tag "modules"
-    tag "modules_nfcore"
     tag "stainsegmy"
 
     config "./nextflow.config" 
